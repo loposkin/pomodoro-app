@@ -5,7 +5,7 @@ import 'package:redux/redux.dart';
 import 'actions.dart';
 import 'state.dart';
 
-class ToDoListPage extends StatelessWidget {
+class PomodoroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
       StoreConnector<AppState, _ViewModel>(

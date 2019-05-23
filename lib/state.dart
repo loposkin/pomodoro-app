@@ -1,9 +1,15 @@
+import 'dart:async';
 class AppState {
-  final int pomodoroDuration;
+  static final int pomodoroDuration = 1500;
   final int currentCounter;
   final bool pomoRunning;
+  static Timer _timer = null;
 
-  AppState(this.pomodoroDuration, this.currentCounter, this.pomoRunning);
+  AppState(this.currentCounter, this.pomoRunning);
 
-  factory AppState.initial() => AppState(1500, 0, false);
+  static void setTimer(Timer timer) {
+    _timer = timer;
+  }
+
+  factory AppState.initial() => AppState(0, false);
 }

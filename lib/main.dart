@@ -12,7 +12,6 @@ class ToDoListApp extends StatelessWidget {
   final Store<AppState> store = Store<AppState>(
     appReducer,
     initialState: AppState.initial(),
-    middleware: createStoreMiddleware(),
   );
 
   @override
