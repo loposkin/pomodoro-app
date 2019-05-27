@@ -6,9 +6,9 @@ import 'pomodoro_page.dart';
 import 'reducers.dart';
 
 
-void main() => runApp(ToDoListApp());
+void main() => runApp(MyApp());
 
-class ToDoListApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   final Store<AppState> store = Store<AppState>(
     appReducer,
     initialState: AppState.initial(),
